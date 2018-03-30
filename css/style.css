@@ -1,0 +1,37 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: steelblue;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form */
+
+div.form {
+    background-color: whitesmoke;
+    height: 330px;
+    margin: 50px;
+    position: fixed;
+    width: 500px;
+}
+.form h1 {
+    padding: 10px;
+}
+.form input {
+    margin: 5px;
+    width: 80%;
+}
+.form textarea {
+    width: 80%;
+}
+
+/* Job Divs */
+
+.jobdiv {
+    background-color: whitesmoke;
+    border: 1px ridge black;
+    margin: 10px;
+    padding: 10px;
+}
