@@ -36,4 +36,22 @@ div.form {
     padding: 10px;
 }
 
+/* Media Queries */
 
+@media (max-width: 1030px) {
+    div.form {
+        position: static;
+    }
+}
+
+@media (max-width: 570px) {
+    div.form {
+        height: 350px;
+        width: 80%;
+    }
+}
+@media (max-width: 531px) {
+    div.form {
+        height: 400px;
+    }
+}
