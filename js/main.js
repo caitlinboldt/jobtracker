@@ -38,9 +38,9 @@ createDiv = (newdiv) => {
     div.className = "jobdiv";
     jobscol.appendChild(div);
 
-    const h1 = document.createElement("h1");
-    h1.textContent = jobs[newdiv].company;
-    div.appendChild(h1);
+    const h2 = document.createElement("h2");
+    h2.textContent = jobs[newdiv].company;
+    div.appendChild(h2);
 
     const p = document.createElement("p");
     p.className = "date"
