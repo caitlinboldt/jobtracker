@@ -5,7 +5,7 @@ function Job (company, date, response, note) {
     this.response = response;
     this.note = note;
 }
-//Array of jobs
+// Array of jobs
 let jobs = [
     new Job ("Calm", "01/29/18", "Awaiting response", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim dolor suscipit maxime eum consequuntur voluptatum autem necessitatibus, vero harum quia in dolore excepturi velit non veniam omnis odit libero. Maxime!"),
     new Job ("Facebook", "01/30/18", "Awaiting response", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim dolor suscipit maxime eum consequuntur voluptatum autem necessitatibus.")
@@ -26,7 +26,7 @@ window.onload = function load() {
         createDiv(i);
     }
 }
-//the createDiv function creates a new div for the job input information and displays it on the page
+// The createDiv function creates a new div for the job input information and displays it on the page
 createDiv = (newdiv) => {
     const jobscol = document.getElementById("jobscol");
 
