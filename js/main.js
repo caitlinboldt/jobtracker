@@ -44,17 +44,17 @@ createDiv = (newdiv) => {
 
     const p = document.createElement("p");
     p.className = "date"
-    p.textContent = jobs[newdiv].date;
+    p.textContent = "Date: " + jobs[newdiv].date;
     div.appendChild(p);
 
     const p2 = document.createElement("p");
     p2.className = "response"
-    p2.textContent = jobs[newdiv].response;
+    p2.textContent = "Response: " + jobs[newdiv].response;
     div.appendChild(p2);
 
     const p3 = document.createElement("p");
     p3.className = "notes"
-    p3.textContent = jobs[newdiv].note;
+    p3.textContent = "Notes: " + jobs[newdiv].note;
     div.appendChild(p3);
 }
 
