@@ -7,7 +7,7 @@ function Job (company, date, response, note) {
 }
 // Array of jobs
 let jobs = [
-    new Job ("Calm", "01/29/18", "Awaiting response", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim dolor suscipit maxime eum consequuntur voluptatum autem necessitatibus, vero harum quia in dolore excepturi velit non veniam omnis odit libero. Maxime!"),
+    new Job ("Calm", "01/29/18", "Awaiting Response", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim dolor suscipit maxime eum consequuntur voluptatum autem necessitatibus, vero harum quia in dolore excepturi velit non veniam omnis odit libero. Maxime!"),
     new Job ("Facebook", "01/30/18", "Awaiting response", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim dolor suscipit maxime eum consequuntur voluptatum autem necessitatibus.")
 ]
 // Uses the button onclick to take the input values and put them into the array of jobs
@@ -16,9 +16,13 @@ track = () => {
     let d = document.getElementById("inputdate").value;
     let res = document.getElementById("inputres").value;
     let n = document.getElementById("inputnote").value;
-    let input = new Job (com,d,res,n);
-    jobs.push(input);
-    createDiv(jobs.length - 1);
+    if(com, d, res, n === "") {
+        alert("Please make sure the entire form is filled out. Thank you!");
+    } else {
+        let input = new Job (com,d,res,n);
+        jobs.push(input);
+        createDiv(jobs.length - 1);
+    };
 }
 // On the window load a for loop goes through the job array and calls the createDiv function
 window.onload = function load() {
